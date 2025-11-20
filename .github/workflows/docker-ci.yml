@@ -77,5 +77,5 @@ jobs:
     #     docker tag task-api:latest ${{ secrets.DOCKER_USERNAME }}/task-api:latest
     #     docker push ${{ secrets.DOCKER_USERNAME }}/task-api:latest
     
-    - name: Success notification
-      run: echo "✅ Docker image built and tested successfully!"
+    - name: Esperar 10 segundos (demo)
+      run: sleep 10
