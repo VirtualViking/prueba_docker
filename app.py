@@ -9,7 +9,7 @@ tasks = [
     {"id": 2, "title": "Configurar GitHub Actions", "completed": False, "created_at": "2024-11-19"}
 ]
 
-@app.route('/')
+@app.route('/')#
 def home():
     return jsonify({
         "message": "🚀 API de Tareas - version 2 de docker!",
