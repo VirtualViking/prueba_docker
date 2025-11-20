@@ -1,0 +1,21 @@
+# No incluir estos archivos en la imagen Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.git/
+.github/
+.gitignore
+README.md
+.env
+venv/
+env/
+.venv/
+*.md
+.DS_Store

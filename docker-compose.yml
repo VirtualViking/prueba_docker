@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  # Servicio de la API
+  task-api:
+    build: .
+    container_name: task-api-container
+    ports:
+      - "5000:5000"  # Puerto local:Puerto contenedor
+    environment:
+      - FLASK_ENV=development
+    restart: unless-stopped
+    # Volumen para desarrollo (opcional - permite cambios en tiempo real)
+    # volumes:
+    #   - ./app.py:/app/app.py
